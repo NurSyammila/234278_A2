@@ -12,7 +12,7 @@ import org.json.JSONObject;
  Semester: A171 
  * Course: STIW3054 
  * Group: A 
- * Task: Assignment 1 
+ * Task: Assignment 2 
  * Matric: 234278
  * Name: #NurSyammila
  */
@@ -23,15 +23,17 @@ public class Keywords {
     public JSONObject json = new JSONObject();
     public JSONArray array = new JSONArray();
     public JSONObject item;
-    String task;
-    String matrik;
-    String ni;
-    String keyword[] = {"abstract", "assert", "boolean", "break", "byte", "case", "catch", "char", "class", "continue",
-        "default", "do", "double", "else", "enum", "extends", "final", "finally", "float", "for",
-        "if", "implements", "import", "instanceof", "int", "interface", "long", "native", "new", "package",
-        "private", "protected", "public", "return", "short", "static", "strictfp", "super", "switch", "synchronized",
-        "this", "throw", "throws", "transient", "try", "void", "volatile", "while", "true", "null",
-        "false", "const", "goto"};
+    String task , matrik , ni;
+    public final String keyword[] = {"abstract", "assert", "boolean ",
+        "break", "byte ", "case", "catch", "char ", "class", "const",
+        "continue", "default", "do", "double ", "else", "extends", "false",
+        "final", "finally", "float ", "for", "goto", "if", "implements",
+        "import", "instanceof", "int ", "interface", "long ", "native",
+        "new", "null", "package", "private", "protected", "public",
+        "return", "short", "static", "strictfp", "super", "switch",
+        "synchronized", "this", "throw", "throws", "transient", "true",
+        "try", "void", "volatile", "while", "enum"};
+
 
     public JSONObject Count(String[] list) {
         for (String list1 : list) {
@@ -44,12 +46,12 @@ public class Keywords {
                     } else if (scanLine.contains("//Matrik:")) {
                         matrik = scanLine.replaceAll("\\s*//Matrik:\\s*#", "");
                     }
-                    for (int j = 0; j < keyword.length; j++) {
-                        if (scanLine.contains(keyword[j])) {
-                            count[j] = count[j] + 1;
+                    for (int i = 0; i < keyword.length; i++) {
+                        if (scanLine.contains(keyword[i])) {
+                            count[i] = count[i] + 1;
                         }
                     }
-                }
+                }    
             }catch (IOException e) {
                 System.out.println("Error, file cannot be read.");
             }

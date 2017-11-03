@@ -12,9 +12,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- *
- * @author Badrul
+ * Semester: A171 
+ * Course: STIW3054 
+ * Group: A 
+ * Task: Assignment 2 
+ * Matric: 234278
+ * Name: #NurSyammila
  */
+
 public class Save {
 
     public JSONObject json;

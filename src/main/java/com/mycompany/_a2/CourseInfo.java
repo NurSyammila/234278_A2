@@ -12,18 +12,17 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 /**
- *
- * @author Badrul
+ * Semester: A171 
+ * Course: STIW3054 
+ * Group: A 
+ * Task: Assignment 2 
+ * Matric: 234278
+ * Name: #NurSyammila
  */
 public class CourseInfo {
 
     LinkedList<String> listFileContent;
-    public String semester;
-    public String course;
-    public String group;
-    public String task;
-    public String matrik;
-    public String name;
+    public String semester , course ,group ,task , matrik ,name;
     public JSONObject json = new JSONObject();
     public JSONArray array = new JSONArray();
     public JSONObject item;

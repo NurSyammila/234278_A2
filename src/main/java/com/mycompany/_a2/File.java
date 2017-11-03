@@ -6,20 +6,20 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
- Semester: A171 
- * Course: STIW3054 
- * Group: A 
- * Task: Assignment 1 
+ * Semester: A171 
+ * Course: STIW3054 G
+ * roup: A 
+ * Task: Assignment 2 
  * Matric: 234278
  * Name: #NurSyammila
  */
 
 public class File {
-    
+
     public String[] list;
-    
+
     static void set(java.io.File file, Collection<java.io.File> all) {
-        java.io.File[] x= file.listFiles();
+        java.io.File[] x = file.listFiles();
         if (x != null) {
             for (java.io.File y : x) {
                 all.add(y);
@@ -51,5 +51,5 @@ public class File {
         }
         return list;
     }
-    
+
 }

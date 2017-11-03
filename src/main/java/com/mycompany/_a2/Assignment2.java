@@ -5,17 +5,18 @@ import org.json.JSONObject;
 
 
 /**
- *
- * 
+ * Semester: A171 
+ * Course: STIW3054 
+ * Group: A 
+ * Task: Assignment 2 
+ * Matric: 234278
+ * Name: #NurSyammila
  */
 public class Assignment2 {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        
-        String name;
+       
         File find = new File();
         String[] list = find.list;
 

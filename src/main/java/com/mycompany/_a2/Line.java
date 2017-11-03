@@ -52,7 +52,7 @@ public class Line {
                     }
                     totalcount++;
                 }
-            }catch (IOException e) {
+            } catch (IOException e) {
                 System.out.println("Error, file cannot be read.");
             }
             try {
